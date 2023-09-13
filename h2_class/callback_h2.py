@@ -173,8 +173,8 @@ for k in range(len(num_customer)):
                                                             i in range(len(us_a))) <= 0)
             else:
                 loop = False
-                t_stop = time.time()
                 
+        t_stop = time.time()        
         runtime_class.append(t_stop - t_start)
         print(f'time = {t_stop - t_start}')
         z2 = (m.model.solution.get_objective_value())
